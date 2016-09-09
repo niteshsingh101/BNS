@@ -41,6 +41,7 @@
 </div>
 
 <script>var app= angular.module('Myapp', ["ngRoute"]);</script>
+<script src="javascript/config.js"></script>
 <script src="javascript/about.js"></script>
 <script src="javascript/route.js"></script>
 
