@@ -1,6 +1,6 @@
 <?php include("include/header.php");?>
 <body ng-app="Myapp">
-<div id="art-main" ng-controller="Myctrl">
+<div id="art-main" >
     <div class="cleared reset-box"></div>
 <div class="art-bar art-nav">
 <div class="art-nav-outer">
@@ -24,7 +24,7 @@
             <div class="art-header-wrapper">
                 <div class="cleared reset-box"></div>
                 <div class="art-header-inner">
-                <div class="art-logo">
+                <div class="art-logo" ng-controller="Logoctrl">
                                  <h1 class="art-logo-name"><a href="#">{{headline}}</a></h1>
                                                  <h2 class="art-logo-text">{{slogan}}</h2>
                                 </div>
@@ -34,7 +34,7 @@
         
     </div>
     <div class="cleared reset-box"></div>
-    <div ng-view></div>
+    <div ng-controller="Myctrl" ng-view></div>
     <div class="cleared"></div>
     
     <div class="cleared"></div>
